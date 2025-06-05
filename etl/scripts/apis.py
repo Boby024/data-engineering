@@ -16,6 +16,7 @@ class Test:
     def save(self):
         data = self.load()
         dw = DataWareHouse(table_name="test_table", data=data)
+        dw.save(data)
 
 
 class Huggingface:

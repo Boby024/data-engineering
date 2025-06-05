@@ -3,9 +3,10 @@ default:
   outputs:
     dev:
       type: postgres
-      host: xxx
-      user: xxx
-      password: xxxx
-      dbname: xxx
-      schema: xxx
+      host: localhost
+      user: postgres
+      password: postgres
+      port: 5433
+      dbname: de_etl_warehouse
+      schema: analytics
       threads: 1

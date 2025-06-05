@@ -1,4 +1,6 @@
 apache-airflow==2.10.5
-dbt==1.0.0.40.0
+dbt==1.0.0.40.3
 psycopg2-binary==2.9.10
 pandas==2.2.3
+SQLAlchemy==1.4.54
+python-dotenv==1.1.0

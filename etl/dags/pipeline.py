@@ -23,16 +23,16 @@ with DAG("etl_with_dbt", schedule_interval="@daily", default_args=default_args) 
         python_callable=apis.Test().save()
     )
 
-    extract_e2 = PythonOperator(
-        task_id="extract_database_postgresql",
-        python_callable=databases.PostgresSQL(uri="", table_name="").save()
-    )
+    # extract_e2 = PythonOperator(
+    #     task_id="extract_database_postgresql",
+    #     python_callable=databases.PostgresSQL(uri="", table_name="").save()
+    # )
 
-    # Transform with DBT
-    dbt_run = BashOperator(
-        task_id="transformation_dbt_run",
-        bash_command="xxxx"
-    )
+    # # Transform with DBT
+    # dbt_run = BashOperator(
+    #     task_id="transformation_dbt_run",
+    #     bash_command="xxxx"
+    # )
 
-
-    extract_e1 >> extract_e2 >> dbt_run
+    # extract_e1 >> extract_e2 >> dbt_run
+    extract_e1

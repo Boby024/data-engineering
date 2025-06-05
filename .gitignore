@@ -132,6 +132,7 @@ cython_debug/
 # etl
 etl/venv
 etl/data
+etl/dbt/.user.yml
 
 # bi
 bi/venv

@@ -10,3 +10,4 @@ class PostgresSQL:
     def save(self):
         data = self.load()
         dw = DataWareHouse(table_name="test_table", data=data)
+        # dw.save()
