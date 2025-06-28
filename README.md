@@ -35,5 +35,8 @@ Build a pipeline that extracts data from multiple sources (e.g., API, CSV, or da
 </div>
 
 <div>
-    <h2>Project 2: Business Intelligence</h2>
+    <h2>Project 2: Business Intelligence Tool (Metabase)</h2>
+    <div>An open-source business intelligence application called Metabase had been developed to make data visualization and analysis simple for users without requiring a high level of technical expertise.  Metabase is used in the "bi" folder to generate interactive dashboards and reports that offer insightful information and facilitate data-driven decision-making throughout the company.  Its intuitive interface facilitates exchanging findings, searching databases, and real-time monitoring of important parameters.
+    </div>
+    <br><p>The "bi" folder contains steps and instructions for installing and running Metabase locally.</p>
 </div>

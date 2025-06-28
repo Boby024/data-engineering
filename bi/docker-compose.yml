@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase-bi
+    network_mode: host
+    hostname: localhost
+    volumes:
+      - ./metabase-data-volumes:/metabase-data # this can be changed
+      - ./plugins:/plugins
+    ports:
+      - "${MB_PORT}:3000"
+    user: "2000:2000"  # make sure container runs as the Metabase user
+    environment:
+      MB_DB_TYPE: ${MB_DB_TYPE}
+      MB_DB_DBNAME: ${MB_DB_DBNAME}
+      MB_DB_PORT: ${MB_DB_PORT}
+      MB_DB_USER: ${MB_DB_USER}
+      MB_DB_PASS: ${MB_DB_PASS}
+      MB_DB_HOST: ${MB_DB_HOST}
+      MB_PLUGINS_DIR: /plugins
+      MB_JETTY_HOST: 0.0.0.0
+

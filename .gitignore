@@ -136,3 +136,8 @@ etl/dbt/.user.yml
 
 # bi
 bi/venv
+bi/metabase-data-volumes
+bi/plugins/*
+
+!bi/plugins/ojdbc11.jar
+!bi/plugins/vertica-jdbc-24.2.0-1.jar
